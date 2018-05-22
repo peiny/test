@@ -7,9 +7,10 @@ python:
 
 install:
   - pip install codecov
+  - pip freeze > requirements.txt
 
 script:
-  - pytest tests.py
+  - coverage run -m py.test test_test.py
 
 after_success:
   - codecov

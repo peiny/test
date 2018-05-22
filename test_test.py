@@ -1,9 +1,8 @@
-import unittest
 import pytest
 import awesome
 
 
-class TestMethods(unittest.TestCase):
+class TestMethods:
     def test_add(self):
         # self.assertEqual(awesome.smile(), ":)")
         assert awesome.smile() == ":)"
