@@ -6,7 +6,7 @@ class TestMethods:
     def test_smile(self):
         assert awesome.smile() == ":)"
     
-    def test_extra(self):
+    def test_addmore(self):
         assert awesome.addmore() ==":"
 
 
