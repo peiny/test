@@ -10,6 +10,7 @@ install:
   - pip freeze > requirements.txt
 
 script:
+  - codecov --token=9491677c-40f1-4982-9a32-f0fd7d12b477
   - coverage run -m py.test test_test.py
 
 after_success:
