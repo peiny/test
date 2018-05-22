@@ -8,5 +8,8 @@ class TestMethods:
     
     def test_addmore(self):
         assert awesome.addmore() ==":"
+    
+    def test_frown(self):
+        assert awesome.frown() == ":("
 
 
