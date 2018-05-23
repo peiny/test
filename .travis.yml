@@ -12,6 +12,8 @@ install:
 script:
   - coverage erase
   - coverage run -m py.test test_test.py
+  - coverage xml
+  - codecov --token=9491677c-40f1-4982-9a32-f0fd7d12b477
 
 after_success:
   - codecov
