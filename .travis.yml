@@ -10,7 +10,7 @@ install:
   - pip freeze > requirements.txt
 
 script:
-  - pip run py.test --cov=./ $(TESTS)
+  - py.test --cov=./ $(TESTS)
   
 
 after_success:
