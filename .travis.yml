@@ -10,9 +10,7 @@ install:
   - pip freeze > requirements.txt
 
 script:
-  - coverage erase
-  - coverage run -m py.test test_test.py
-  - coverage xml
+  - pip run py.test --cov=./ $(TESTS)
   
 
 after_success:
